@@ -1,0 +1,133 @@
+/* ── Google Fonts — MUST be first, before Tailwind directives ─────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* ── Tailwind base layers ─────────────────────────────────────────────────── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base resets & defaults ───────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans overflow-x-hidden;
+  }
+
+  ::selection {
+    @apply bg-accent text-bg;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-bg2;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-sm;
+  }
+}
+
+/* ── Reusable component classes ───────────────────────────────────────────── */
+@layer components {
+  /* Angled-corner clip for buttons */
+  .btn-clip {
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+  }
+
+  /* Hero gradient text (cyan → transparent) */
+  .gradient-text {
+    background: linear-gradient(
+      90deg,
+      #00d4ff 0%,
+      rgba(0, 212, 255, 0.35) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Scroll-reveal — JS adds .visible to trigger the animation */
+  .reveal {
+    @apply opacity-0 translate-y-7;
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Project card pseudo-element accent bar */
+  .project-card {
+    @apply relative overflow-hidden;
+  }
+  .project-card::before {
+    content: "";
+    @apply absolute left-0 top-0 bottom-0 w-[3px] bg-accent;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .project-card:hover::before {
+    transform: scaleY(1);
+  }
+
+  .project-card::after {
+    content: "";
+    @apply absolute inset-0 opacity-0 pointer-events-none;
+    background: radial-gradient(
+      circle at 80% 50%,
+      rgba(0, 212, 255, 0.08) 0%,
+      transparent 60%
+    );
+    transition: opacity 0.3s;
+  }
+  .project-card:hover::after {
+    @apply opacity-100;
+  }
+
+  /* Nav link animated underline */
+  .nav-link {
+    @apply relative;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-px w-0 bg-accent;
+    transition: width 0.25s ease;
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Section header numbered rule */
+  .section-header {
+    @apply flex items-center gap-6 mb-14;
+  }
+}
+
+/* ── Custom utilities ─────────────────────────────────────────────────────── */
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animation-delay-200 {
+    animation-delay: 0.25s;
+  }
+  .animation-delay-300 {
+    animation-delay: 0.42s;
+  }
+  .animation-delay-400 {
+    animation-delay: 0.58s;
+  }
+  .animation-delay-500 {
+    animation-delay: 0.72s;
+  }
+}
