@@ -77,6 +77,7 @@ export default function Navbar() {
           className="absolute top-full left-0 right-0 backdrop-blur-md
                border-b border-border flex flex-col gap-5 p-6 z-50
                shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
+          style={{ backgroundColor: "#080b10" }}
         >
           {NAV_LINKS.map((link) => (
             <a
