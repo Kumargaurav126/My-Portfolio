@@ -51,6 +51,10 @@ export default function About() {
           ref={rightRef}
           className="reveal bg-card border border-border p-8 space-y-6"
         >
+          {/* Heading */}
+          <h3 className="font-serif font-black text-xl text-ink tracking-tight">
+            Technical Skills
+          </h3>
           {SKILLS.map(({ cat, tags }) => (
             <div key={cat}>
               {/* Category label */}
