@@ -1,29 +1,72 @@
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1qMWkvq2shfdn3_1Bqmqpp8Yl7p1-fPT1/view?usp=sharing";
+  "https://drive.google.com/file/d/1QjpRLpc99trEdmhxohwfkd3XTfnxcdv6/view?usp=sharing";
 
 // ── Skills ────────────────────────────────────────────────────────────────────
 export const SKILLS = [
-  { cat: "Languages", tags: ["Java", "SQL", "JavaScript"] },
+  { cat: "Languages", tags: ["Java", "SQL", "C++"] },
   {
     cat: "Backend",
     tags: [
       "Spring Boot",
-      "Spring MVC",
       "Spring Data JPA",
       "Hibernate",
       "REST APIs",
+      "Model Context Protocol (MCP)",
     ],
   },
+  { cat: "Frontend", tags: ["React.js", "HTML", "CSS", "Tailwind CSS"] },
   { cat: "Security", tags: ["Spring Security", "JWT", "OAuth 2.0"] },
+  { cat: "Cloud & DevOps", tags: ["AWS", "Docker"] },
   { cat: "Databases", tags: ["PostgreSQL", "MongoDB", "MySQL"] },
-  { cat: "Frontend", tags: ["React", "HTML", "CSS", "Tailwind CSS"] },
-  { cat: "Core CS", tags: ["DSA", "OOP", "DBMS", "OS", "Networks"] },
+  {
+    cat: "Tools",
+    tags: [
+      "Git",
+      "GitHub",
+      "Maven",
+      "Postman",
+      "IntelliJ IDEA",
+      "VS Code",
+      "Postman",
+    ],
+  },
+  {
+    cat: "Core Concepts",
+    tags: ["DSA", "OOP", "DBMS", "SDLC", "System Design"],
+  },
 ];
 
 // ── Projects ──────────────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
     num: "01",
+    name: "AI Dev Assistant",
+    sub: "MCP-Based AI Code Review & Documentation Tool",
+    links: [
+      {
+        icon: "fab fa-github",
+        label: "GitHub",
+        href: "https://github.com/Kumargaurav126/ai-dev-assistant",
+      },
+    ],
+    desc: [
+      "Standalone MCP server exposes GitHub as AI-callable tools (file reading, code search, complexity analysis) — LLM autonomously navigates codebases in response to natural language queries.",
+      "Tool-call orchestration loop: AI iteratively invokes MCP tools and feeds results back until it has sufficient context to answer, mirroring Claude Desktop's internal architecture.",
+      "GitHub OAuth2 with AES-encrypted token storage, stateless JWT auth, and React chat UI with expandable file tree explorer.",
+    ],
+    tech: [
+      "Java 21",
+      "Spring Boot",
+      "React.js",
+      "MCP Server",
+      "PostgreSQL",
+      "GitHub OAuth2",
+      "OpenRouter API",
+      "JavaParser",
+    ],
+  },
+  {
+    num: "02",
     name: "Incognito Campus",
     sub: "Anonymous Real-Time Chat Platform",
     links: [
@@ -34,22 +77,23 @@ export const PROJECTS = [
       },
     ],
     desc: [
-      "Full-stack anonymous chat — React + Spring Boot with real-time bidirectional WebSocket communication.",
-      "Gemini AI API integration to auto-summarize chat rooms into structured digests.",
-      "End-to-end production deploy: Vercel (frontend) · Railway (backend) · MongoDB Atlas (DB).",
+      "Engineered a full-stack anonymous chat platform enabling real-time bidirectional communication via WebSocket for instant message delivery.",
+      "Auto-generated anonymous display names at registration by randomly combining adjective-animal pairs with a numeric suffix (e.g. SilentFox482).",
+      "Integrated Gemini AI API to automatically summarize chat room conversations, grouping multiple messages into concise digests for quick review.",
     ],
     tech: [
-      "React",
+      "Java 17",
       "Spring Boot",
+      "React.js",
       "WebSocket",
       "MongoDB",
-      "Gemini AI",
+      "Gemini AI API",
       "Vercel",
-      "Railway",
+      "Render",
     ],
   },
   {
-    num: "02",
+    num: "03",
     name: "Smart Email Assistant",
     sub: "AI-Powered Email Response Generator",
     links: [
@@ -60,40 +104,19 @@ export const PROJECTS = [
       },
     ],
     desc: [
-      "Chrome extension reads Gmail DOM → Spring Boot REST API → AI reply injected back into Gmail.",
-      "Gemini AI via Spring WebClient (non-blocking); prompt engineering for formal / casual / friendly tones.",
-      "React + Material UI with tone picker, loading states, error handling, and one-click clipboard copy.",
+      "Built a Chrome extension that detects Gmail's dynamic compose window, injecting an AI Reply button into the toolbar and writing generated replies directly into the compose box.",
+      "Developed a React frontend with tone selection, loading state handling, error feedback, and one-click clipboard copy for generated replies.",
+      "Integrated Gemini AI API via Spring WebClient for non-blocking HTTP calls with dynamic prompt engineering to support configurable reply tones (formal, casual, friendly).",
     ],
     tech: [
-      "React",
+      "Java 17",
       "Spring Boot",
-      "REST APIs",
-      "Gemini AI",
+      "React.js",
+      "Gemini AI API",
       "Chrome Extension",
-      "Material UI",
-    ],
-  },
-  {
-    num: "03",
-    name: "E-Commerce REST API",
-    sub: "Secure Product Management System",
-    links: [],
-    desc: [
-      "Full-stack e-commerce: React frontend + Spring Boot APIs for products, users, cart, and orders.",
-      "Spring Security · JWT · Google OAuth 2.0 · role-based access control (ADMIN / USER).",
-      "Custom JPQL @Query annotations across Product, User, Cart, and Order entity relationships.",
-    ],
-    tech: [
-      "React",
-      "Spring Boot",
-      "Spring Data JPA",
-      "JWT",
-      "OAuth 2.0",
-      "PostgreSQL",
     ],
   },
 ];
-
 // ── Achievements ──────────────────────────────────────────────────────────────
 export const ACHIEVEMENTS = [
   {
