@@ -50,7 +50,7 @@ export const PROJECTS = [
       },
     ],
     desc: [
-      "Built a standalone MCP server with 4+ GitHub intelligence tools — LLMs can autonomously browse repos, search code, and analyze complexity without any manual file navigation.",
+      "Built a standalone MCP server with 4+ GitHub intelligence tools — LLMs can autonomously browse repos, search code, and analyze complexity.",
       "Designed an orchestration loop where the AI keeps calling tools and feeding results back into context until it has enough information to give a complete answer.",
       "GitHub OAuth2 login with AES-encrypted token storage, JWT-secured stateless sessions, and a React chat UI with an expandable file tree for navigating codebases.",
     ],
