@@ -1,5 +1,5 @@
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1QjpRLpc99trEdmhxohwfkd3XTfnxcdv6/view?usp=sharing";
+  "https://drive.google.com/file/d/15qJbS1mBgdH7J9D1tssIUwWtz00P_Kpo/view?usp=sharing";
 
 // ── Skills ────────────────────────────────────────────────────────────────────
 export const SKILLS = [
@@ -46,7 +46,7 @@ export const PROJECTS = [
       {
         icon: "fab fa-github",
         label: "GitHub",
-        href: "https://github.com/Kumargaurav126/ai-dev-assistant",
+        href: "https://github.com/Kumargaurav126/AI-Dev-Assistant",
       },
     ],
     desc: [
