@@ -45,7 +45,7 @@ export default function Education() {
         {/* Timeline */}
         <div className="relative">
 
-          {/* Vertical line */}
+          {/* Vertical line — desktop only */}
           <div className="absolute left-[19px] top-2 bottom-2 w-px bg-border2 hidden md:block" />
 
           <div className="space-y-6">
@@ -55,38 +55,39 @@ export default function Education() {
                 className="project-card bg-card border border-border p-6 md:p-8 md:ml-12 relative animate-reveal"
                 style={{ animationDelay: `${i * 0.15}s`, animationFillMode: "both" }}
               >
-                {/* Dot on timeline */}
+                {/* Dot on timeline — desktop only */}
                 <div className="hidden md:flex absolute -left-[49px] top-8 w-[22px] h-[22px] rounded-full border-2 border-accent bg-bg2 items-center justify-center">
                   <span className="w-2 h-2 rounded-full bg-accent" />
                 </div>
 
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                {/* Top row — icon + degree + year/grade on same line */}
+                <div className="flex items-start justify-between gap-4">
 
-                  {/* Left — degree + institution */}
-                  <div className="flex items-start gap-4">
+                  {/* Left — icon + degree + institution */}
+                  <div className="flex items-start gap-3 min-w-0">
                     <div
-                      className="w-10 h-10 rounded-sm border border-border2 flex items-center justify-center flex-shrink-0"
+                      className="w-9 h-9 rounded-sm border border-border2 flex items-center justify-center flex-shrink-0 mt-0.5"
                       style={{ background: "rgba(0,212,255,0.06)" }}
                     >
-                      <i className={`${edu.icon} text-accent text-sm`} />
+                      <i className={`${edu.icon} text-accent text-xs`} />
                     </div>
-                    <div>
-                      <h3 className="font-serif font-black text-lg text-ink tracking-tight leading-snug">
+                    <div className="min-w-0">
+                      <h3 className="font-serif font-black text-base md:text-lg text-ink tracking-tight leading-snug">
                         {edu.degree}
                       </h3>
-                      <p className="font-mono text-[11px] text-accent tracking-[0.12em] uppercase mt-1">
+                      <p className="font-mono text-[10px] text-accent tracking-[0.1em] uppercase mt-1 truncate">
                         {edu.institution}
                       </p>
                     </div>
                   </div>
 
-                  {/* Right — year + grade */}
-                  <div className="flex flex-col items-start sm:items-end gap-1 flex-shrink-0">
-                    <span className="font-mono text-[11px] text-muted tracking-widest uppercase">
+                  {/* Right — year + grade stacked, always visible */}
+                  <div className="flex flex-col items-end gap-1.5 flex-shrink-0">
+                    <span className="font-mono text-[10px] text-muted tracking-widest uppercase whitespace-nowrap">
                       {edu.year}
                     </span>
                     <span
-                      className="font-mono text-[12px] font-bold px-3 py-1 border"
+                      className="font-mono text-[11px] font-bold px-2.5 py-0.5 border whitespace-nowrap"
                       style={{
                         color: "#00d4ff",
                         borderColor: "rgba(0,212,255,0.3)",
@@ -95,15 +96,20 @@ export default function Education() {
                     >
                       {edu.grade}
                     </span>
-                    {edu.current && (
-                      <span className="font-mono text-[10px] tracking-widest uppercase text-accent flex items-center gap-1.5 mt-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                        Currently enrolled
-                      </span>
-                    )}
                   </div>
 
                 </div>
+
+                {/* Currently enrolled badge — below, full width */}
+                {edu.current && (
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <span className="font-mono text-[10px] tracking-widest uppercase text-accent flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                      Currently enrolled
+                    </span>
+                  </div>
+                )}
+
               </div>
             ))}
           </div>
