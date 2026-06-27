@@ -6,6 +6,7 @@ import Achievements from "./components/Achievements";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Hero />
       <About />
       <Projects />
+      <Education />
       <Achievements />
       <Resume />
       <Contact />

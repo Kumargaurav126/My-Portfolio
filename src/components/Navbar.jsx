@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const NAV_LINKS = ["about", "projects", "achievements", "resume", "contact"];
+const NAV_LINKS = ["about", "projects", "education", "achievements", "resume", "contact"];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

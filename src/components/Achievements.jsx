@@ -48,7 +48,7 @@ function AchCard({ achievement, index }) {
 export default function Achievements() {
   return (
     <section id="achievements" className="px-8 md:px-16 py-24">
-      <SectionHeader num="03" title="Achievements" />
+      <SectionHeader num="04" title="Achievements" />
 
       {/* 3-col grid; 1px gaps act as dividers */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">

@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="px-8 md:px-16 py-24">
-      <SectionHeader num="05" title="Contact" />
+      <SectionHeader num="06" title="Contact" />
 
       <div
         ref={ref}
