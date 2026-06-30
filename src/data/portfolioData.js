@@ -1,5 +1,5 @@
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1_nT9xWL8D8w6Eu9m5qaIosY6uyG5Kw5T/view?usp=sharing";
+  "https://drive.google.com/file/d/1B6AAWJMqJo0rDpsl3VWhuU4ofOQsQsM9/view?usp=sharing";
 
 // ── Skills ────────────────────────────────────────────────────────────────────
 export const SKILLS = [
