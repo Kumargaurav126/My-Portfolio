@@ -3,7 +3,7 @@ const EDUCATION = [
     degree: "B.Tech in Computer Science & Engineering",
     institution: "Lakshmi Narain College of Technology, Bhopal",
     year: "2022 – 2026",
-    grade: "CGPA: 8.15 / 10.00",
+    grade: "CGPA: 8.19 / 10.00",
     icon: "fas fa-graduation-cap",
     current: true,
   },
@@ -75,7 +75,7 @@ export default function Education() {
                       <h3 className="font-serif font-black text-base md:text-lg text-ink tracking-tight leading-snug">
                         {edu.degree}
                       </h3>
-                      <p className="font-mono text-[10px] text-accent tracking-[0.1em] uppercase mt-1 truncate">
+                      <p className="font-mono text-[10px] text-accent tracking-[0.1em] uppercase mt-1 break-words">
                         {edu.institution}
                       </p>
                     </div>
