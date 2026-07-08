@@ -20,7 +20,7 @@ export default function About() {
                 final-year Computer Science student
               </strong>{" "}
               at Lakshmi Narain College of Technology, Bhopal, with a CGPA of{" "}
-              <strong className="text-ink">8.15</strong>. I specialise in
+              <strong className="text-ink">8.19</strong>. I specialise in
               building production-grade, full-stack applications —
               backend-first.
             </p>
@@ -40,7 +40,7 @@ export default function About() {
           {/* 2×2 stat grid */}
           <div className="grid grid-cols-2 gap-px mt-8 border border-border overflow-hidden">
             <StatBox count={600} label="DSA problems" />
-            <StatBox val="8.15" label="CGPA (B.Tech CSE)" />
+            <StatBox val="8.19" label="CGPA (B.Tech CSE)" />
             <StatBox count={3} label="Deployed projects" />
             <StatBox val="5★" label="Java · HackerRank" />
           </div>
