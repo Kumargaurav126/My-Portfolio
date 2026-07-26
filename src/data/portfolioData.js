@@ -142,8 +142,8 @@ export const ACHIEVEMENTS = [
   },
   {
     icon: "🏆",
-    title: "Peak LeetCode Rating 1653",
-    desc: "Achieved a peak contest rating of 1653 on LeetCode.",
+    title: "Max LeetCode Rating 1673",
+    desc: "Achieved a max contest rating of 1673 on LeetCode.",
     links: [
       {
         label: "LeetCode Profile",

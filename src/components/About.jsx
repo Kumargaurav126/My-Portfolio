@@ -41,7 +41,7 @@ export default function About() {
           <div className="grid grid-cols-2 gap-px mt-8 border border-border overflow-hidden">
             <StatBox count={700} label="DSA problems" />
             <StatBox val="8.19" label="CGPA (B.Tech CSE)" />
-            <StatBox count={1673} label="Max LeetCode Rating" />
+            <StatBox count={1670} label="Max LeetCode Rating" />
             <StatBox val="5★" label="Java · HackerRank" />
           </div>
         </div>
