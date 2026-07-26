@@ -9,14 +9,34 @@ const MOCK_SECTIONS = [
   { title: "Certifications", lines: [70] },
 ];
 
+const BUTTONS = [
+  {
+    icon: "fas fa-download",
+    label: "Download PDF",
+    accent: true,
+    download: true,
+  },
+  {
+    icon: "fas fa-eye",
+    label: "View in browser",
+    accent: false,
+    download: false,
+  },
+];
+
+const baseBtn =
+  "btn-clip inline-flex items-center gap-3 px-7 py-4 font-mono text-[12px] font-bold tracking-[0.08em] uppercase transition-all duration-200 hover:-translate-y-0.5 ";
+const accentBtn = "bg-accent text-bg hover:bg-white";
+const outlineBtn =
+  "bg-transparent text-ink border border-border2 hover:border-accent hover:text-accent";
+
 function ResumeMockup() {
   const ref = useReveal(0.15);
 
   return (
     <div
       ref={ref}
-      className="reveal relative overflow-hidden min-h-[420px] flex flex-col
-                 bg-card border border-border2"
+      className="reveal relative overflow-hidden min-h-[420px] flex flex-col bg-card border border-border2"
     >
       {/* Fake browser chrome */}
       <div className="flex items-center justify-between bg-bg3 border-b border-border px-5 py-3">
@@ -46,10 +66,7 @@ function ResumeMockup() {
 
         {MOCK_SECTIONS.map((sec) => (
           <div key={sec.title} className="mb-5">
-            <p
-              className="font-mono text-[9px] tracking-[0.15em] text-muted2 uppercase
-                          mb-2 pb-1.5 border-b border-border"
-            >
+            <p className="font-mono text-[9px] tracking-[0.15em] text-muted2 uppercase mb-2 pb-1.5 border-b border-border">
               {sec.title}
             </p>
 
@@ -82,16 +99,14 @@ function ResumeMockup() {
       <div
         className="absolute inset-0 flex items-end justify-center pb-6"
         style={{
-          background:
-            "linear-gradient(to bottom, transparent 40%, #131b26 100%)",
+          background: "linear-gradient(to bottom, transparent 40%, #131b26 100%)",
         }}
       >
         <a
           href={RESUME_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 font-mono text-[11px] text-accent
-                     tracking-widest uppercase hover:text-white transition-colors duration-200"
+          className="flex items-center gap-2 font-mono text-[11px] text-accent tracking-widest uppercase hover:text-white transition-colors duration-200"
         >
           <i className="fas fa-expand" />
           View full resume
@@ -103,11 +118,6 @@ function ResumeMockup() {
 
 export default function Resume() {
   const leftRef = useReveal();
-
-  const BUTTONS = [
-    { icon: "fas fa-download", label: "Download PDF", accent: true },
-    { icon: "fas fa-eye", label: "View in browser", accent: false },
-  ];
 
   return (
     <section id="resume" className="px-8 md:px-16 py-24 bg-bg2">
@@ -132,17 +142,8 @@ export default function Resume() {
                 href={RESUME_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`
-                  btn-clip inline-flex items-center gap-3
-                  px-7 py-4
-                  font-mono text-[12px] font-bold tracking-[0.08em] uppercase
-                  transition-all duration-200 hover:-translate-y-0.5
-                  ${
-                    btn.accent
-                      ? "bg-accent text-bg hover:bg-white"
-                      : "bg-transparent text-ink border border-border2 hover:border-accent hover:text-accent"
-                  }
-                `}
+                download={btn.download ? "Kumar_Gaurav_Resume.pdf" : undefined}
+                className={baseBtn + (btn.accent ? accentBtn : outlineBtn)}
               >
                 <i className={btn.icon} />
                 {btn.label}
