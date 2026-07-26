@@ -121,7 +121,7 @@ export default function Resume() {
 
   return (
     <section id="resume" className="px-8 md:px-16 py-24 bg-bg2">
-      <SectionHeader num="05" title="Resume" />
+      <SectionHeader num="06" title="Resume" />
 
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-16 items-start">
         {/* Left: text + buttons */}

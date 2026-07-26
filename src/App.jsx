@@ -7,6 +7,7 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import Certifications from "./components/Certifications";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Projects />
       <Education />
       <Achievements />
+      <Certifications />
       <Resume />
       <Contact />
       <Footer />
