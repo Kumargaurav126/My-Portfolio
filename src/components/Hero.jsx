@@ -19,6 +19,13 @@ const BUTTONS = [
     blank: true,
   },
   {
+    href: "https://www.linkedin.com/in/kumar-gaurav-133960323/",
+    label: "LinkedIn",
+    icon: "fab fa-linkedin",
+    accent: false,
+    blank: true,
+  },
+  {
     href: "#resume",
     label: "Resume",
     icon: "fas fa-file-lines",
@@ -116,7 +123,7 @@ export default function Hero() {
           <p className="text-muted text-lg leading-relaxed max-w-[520px] mb-12 animate-fade-up animation-delay-300">
             Final-year CSE student building production-grade apps with{" "}
             <strong className="text-ink">Java, Spring Boot &amp; React</strong>.
-            600+ DSA problems solved. I ship real things that work.
+            700+ DSA problems solved. I ship real things that work.
           </p>
 
           {/* CTA buttons */}

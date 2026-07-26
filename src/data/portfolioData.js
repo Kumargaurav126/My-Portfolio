@@ -1,5 +1,6 @@
 export const RESUME_LINK =
   "https://drive.google.com/file/d/1dK72xwtvZphnCf7EFaLd5s4nfOhbn12F/view?usp=sharing";
+export const RESUME_DOWNLOAD_LINK = "/KumarGauravResume.pdf";
 
 // ── Skills ────────────────────────────────────────────────────────────────────
 export const SKILLS = [
@@ -8,38 +9,42 @@ export const SKILLS = [
     cat: "Backend",
     tags: [
       "Spring Boot",
-      "Spring Data JPA",
+      "Spring MVC",
       "Hibernate",
-      "REST APIs",
-      "Model Context Protocol (MCP)",
+      "Spring Data JPA",
+      "RESTful APIs",
+      "Microservices",
+      "MCP (Model Context Protocol)",
     ],
   },
-  { cat: "Frontend", tags: ["React.js", "HTML", "CSS", "Tailwind CSS"] },
+  {
+    cat: "Frontend",
+    tags: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+  },
   { cat: "Security", tags: ["Spring Security", "JWT", "OAuth 2.0"] },
   { cat: "Cloud & DevOps", tags: ["AWS", "Docker"] },
-  { cat: "Databases", tags: ["PostgreSQL", "MongoDB", "MySQL"] },
+  { cat: "Databases", tags: ["PostgreSQL", "MongoDB"] },
   {
     cat: "Tools",
-    tags: [
-      "Git",
-      "GitHub",
-      "Maven",
-      "Postman",
-      "IntelliJ IDEA",
-      "VS Code",
-      "Postman",
-    ],
+    tags: ["Git", "GitHub", "Maven", "Postman", "IntelliJ IDEA", "VS Code"],
   },
   {
     cat: "Core Concepts",
-    tags: ["DSA", "OOP", "DBMS", "SDLC", "System Design"],
+    tags: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming (OOP)",
+      "DBMS",
+      "Operating Systems",
+      "SDLC",
+      "System Design",
+    ],
   },
 ];
 
 // ── Projects ──────────────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    num: "01",
+    num: "1",
     name: "AI Dev Assistant",
     sub: "MCP-Based AI Code Review & Documentation Tool",
     links: [
@@ -50,9 +55,9 @@ export const PROJECTS = [
       },
     ],
     desc: [
-      "Built a standalone MCP server with 4+ GitHub intelligence tools — LLMs can autonomously browse repos, search code, and analyze complexity.",
-      "Designed an orchestration loop where the AI keeps calling tools and feeding results back into context until it has enough information to give a complete answer.",
-      "GitHub OAuth2 login with AES-encrypted token storage, JWT-secured stateless sessions, and a React chat UI with an expandable file tree for navigating codebases.",
+      "Engineered a modular 3-tier architecture — React frontend, Spring Boot backend, and standalone MCP server — enabling LLMs to autonomously navigate and analyze repository source code.",
+      "Built 4+ GitHub intelligence tools (file reading, code search, complexity analysis, PR diffing) exposed via MCP, enabling iterative tool invocation and context-aware repository analysis.",
+      "Implemented GitHub OAuth2 authentication with AES-encrypted token storage and JWT authorization, enabling secure AI interactions with private GitHub repositories.",
     ],
     tech: [
       "Java 21",
@@ -62,24 +67,23 @@ export const PROJECTS = [
       "PostgreSQL",
       "GitHub OAuth2",
       "OpenRouter API",
-      "JavaParser",
     ],
   },
   {
-    num: "02",
+    num: "2",
     name: "Incognito Campus",
-    sub: "Anonymous Real-Time Chat Platform",
+    sub: "Real-Time Anonymous Messaging Platform",
     links: [
       {
         icon: "fas fa-external-link-alt",
-        label: "Live",
+        label: "Live Demo",
         href: "https://incognito-campus-frontend.vercel.app/",
       },
     ],
     desc: [
-      "Full-stack anonymous chat platform with real-time bidirectional WebSocket messaging — no accounts, no identity, just instant communication.",
-      "Users get auto-generated display names on join by combining random adjective-animal pairs with a numeric suffix (e.g. SilentFox482) for a fun anonymous experience.",
-      "Gemini AI summarizes long chat room threads into concise digests automatically, so users can catch up without scrolling through hundreds of messages.",
+      "Developed an anonymous identity generation system creating 400K+ unique username combinations using adjective-animal pairs with randomized numeric suffixes.",
+      "Integrated Gemini AI API to automatically summarize chat room conversations, grouping multiple messages into concise digests for quick review.",
+      "Deployed full-stack app with React on Vercel and Spring Boot on Render using Docker, with MongoDB Atlas as the cloud database.",
     ],
     tech: [
       "Java 17",
@@ -88,12 +92,13 @@ export const PROJECTS = [
       "WebSocket",
       "MongoDB",
       "Gemini AI API",
+      "Docker",
       "Vercel",
       "Render",
     ],
   },
   {
-    num: "03",
+    num: "3",
     name: "Smart Email Assistant",
     sub: "AI-Powered Email Response Generator",
     links: [
@@ -121,8 +126,8 @@ export const PROJECTS = [
 export const ACHIEVEMENTS = [
   {
     icon: "🧩",
-    title: "600+ DSA Problems",
-    desc: "Strong algorithmic foundation and competitive problem-solving.",
+    title: "700+ DSA Problems",
+    desc: "Solved 700+ problems of varying difficulties across multiple platforms.",
     links: [
       { label: "LeetCode", href: "https://leetcode.com/u/Kumargaurav12/" },
       {
@@ -136,19 +141,24 @@ export const ACHIEVEMENTS = [
     ],
   },
   {
+    icon: "🏆",
+    title: "Peak LeetCode Rating 1653",
+    desc: "Achieved a peak contest rating of 1653 on LeetCode.",
+    links: [
+      {
+        label: "LeetCode Profile",
+        href: "https://leetcode.com/u/Kumargaurav12/",
+      },
+    ],
+  },
+  {
     icon: "⭐",
     title: "5-Star Java · HackerRank",
     desc: "Proficiency across core and advanced Java programming challenges.",
-    links: [],
-  },
-  {
-    icon: "📜",
-    title: "Wipro TalentNext",
-    desc: "Java Full Stack Development certification from the Wipro TalentNext Program.",
     links: [
       {
-        label: "View certificate",
-        href: "https://drive.google.com/file/d/1R4Yynhh-yy2Ff27d1rJqzo1L9770-foO/view?usp=sharing",
+        label: "HackerRank Profile",
+        href: "https://www.hackerrank.com/profile/kumargaurav12",
       },
     ],
   },

@@ -1,4 +1,4 @@
-import { RESUME_LINK } from "../data/portfolioData";
+import { RESUME_LINK, RESUME_DOWNLOAD_LINK } from "../data/portfolioData";
 import { useReveal } from "../hooks/useReveal";
 import { SectionHeader } from "./Shared";
 
@@ -50,7 +50,7 @@ function ResumeMockup() {
           ))}
         </div>
         <span className="font-mono text-[11px] text-muted tracking-wide">
-          Kumar_Gaurav_Resume.pdf
+          KumarGauravResume.pdf
         </span>
         <span />
       </div>
@@ -139,10 +139,10 @@ export default function Resume() {
             {BUTTONS.map((btn) => (
               <a
                 key={btn.label}
-                href={RESUME_LINK}
+                href={btn.download ? RESUME_DOWNLOAD_LINK : RESUME_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                download={btn.download ? "Kumar_Gaurav_Resume.pdf" : undefined}
+                download={btn.download ? "KumarGauravResume.pdf" : undefined}
                 className={baseBtn + (btn.accent ? accentBtn : outlineBtn)}
               >
                 <i className={btn.icon} />

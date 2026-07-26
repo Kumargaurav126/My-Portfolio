@@ -32,16 +32,16 @@ export default function About() {
             </p>
             <p>
               Outside of shipping projects, I actively compete in DSA —{" "}
-              <strong className="text-ink">600+ problems</strong> solved across
+              <strong className="text-ink">700+ problems</strong> solved across
               LeetCode, GFG, and Code360.
             </p>
           </div>
 
           {/* 2×2 stat grid */}
           <div className="grid grid-cols-2 gap-px mt-8 border border-border overflow-hidden">
-            <StatBox count={600} label="DSA problems" />
+            <StatBox count={700} label="DSA problems" />
             <StatBox val="8.19" label="CGPA (B.Tech CSE)" />
-            <StatBox count={3} label="Deployed projects" />
+            <StatBox val={1673} label="Max LeetCode Rating" />
             <StatBox val="5★" label="Java · HackerRank" />
           </div>
         </div>
