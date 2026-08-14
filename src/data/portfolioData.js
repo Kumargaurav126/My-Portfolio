@@ -1,6 +1,6 @@
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1dK72xwtvZphnCf7EFaLd5s4nfOhbn12F/view?usp=sharing";
-export const RESUME_DOWNLOAD_LINK = "/KumarGauravResume.pdf";
+  "https://drive.google.com/file/d/1a8F7B1zTAgdxmFO0yuGnbI1bxay4uxHl/view?usp=sharing";
+export const RESUME_DOWNLOAD_LINK = "/Kumar_Gaurav_Resume.pdf";
 
 // ── Skills ────────────────────────────────────────────────────────────────────
 export const SKILLS = [
