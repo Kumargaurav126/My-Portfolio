@@ -140,9 +140,9 @@ export default function Resume() {
               <a
                 key={btn.label}
                 href={btn.download ? RESUME_DOWNLOAD_LINK : RESUME_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                download={btn.download ? "KumarGauravResume.pdf" : undefined}
+                target={btn.download ? undefined : "_blank"}
+                rel={btn.download ? undefined : "noopener noreferrer"}
+                download={btn.download ? "Kumar_Gaurav_Resume.pdf" : undefined}
                 className={baseBtn + (btn.accent ? accentBtn : outlineBtn)}
               >
                 <i className={btn.icon} />
