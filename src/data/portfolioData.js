@@ -126,8 +126,8 @@ export const PROJECTS = [
 export const ACHIEVEMENTS = [
   {
     icon: "🧩",
-    title: "700+ DSA Problems",
-    desc: "Solved 700+ problems of varying difficulties across multiple platforms.",
+    title: "750+ DSA Problems",
+    desc: "Solved 750+ problems of varying difficulties across multiple platforms.",
     links: [
       { label: "LeetCode", href: "https://leetcode.com/u/Kumargaurav12/" },
       {
@@ -142,7 +142,7 @@ export const ACHIEVEMENTS = [
   },
   {
     icon: "🏆",
-    title: "Max LeetCode Rating 1673",
+    title: "Max LeetCode Rating 1700",
     desc: "Achieved a max contest rating of 1673 on LeetCode.",
     links: [
       {

@@ -5,7 +5,8 @@ const EDUCATION = [
     year: "2022 – 2026",
     grade: "CGPA: 8.19 / 10.00",
     icon: "fas fa-graduation-cap",
-    current: true,
+    current: false,
+    graduated: true,
   },
   {
     degree: "Class XII — CBSE",
@@ -14,6 +15,7 @@ const EDUCATION = [
     grade: "76.8%",
     icon: "fas fa-school",
     current: false,
+    graduated: false,
   },
   {
     degree: "Class X — CBSE",
@@ -22,6 +24,7 @@ const EDUCATION = [
     grade: "90.6%",
     icon: "fas fa-school",
     current: false,
+    graduated: false,
   },
 ];
 
@@ -100,13 +103,26 @@ export default function Education() {
 
                 </div>
 
-                {/* Currently enrolled badge — below, full width */}
-                {edu.current && (
+                {/* Status badge — only for B.Tech */}
+                {(edu.current || edu.graduated) && (
                   <div className="mt-4 pt-4 border-t border-border">
-                    <span className="font-mono text-[10px] tracking-widest uppercase text-accent flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                      Currently enrolled
-                    </span>
+                    {edu.current ? (
+                      <span className="font-mono text-[10px] tracking-widest uppercase text-accent flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                        Currently enrolled
+                      </span>
+                    ) : (
+                      <span
+                        className="font-mono text-[10px] tracking-widest uppercase text-accent flex items-center gap-1.5"
+                        style={{ textShadow: "0 0 8px rgba(0,212,255,0.6)" }}
+                      >
+                        <span
+                          className="w-1.5 h-1.5 rounded-full bg-accent"
+                          style={{ boxShadow: "0 0 6px rgba(0,212,255,0.8)" }}
+                        />
+                        Graduated
+                      </span>
+                    )}
                   </div>
                 )}
 
