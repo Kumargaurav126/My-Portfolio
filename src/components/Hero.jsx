@@ -121,9 +121,9 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-muted text-lg leading-relaxed max-w-[520px] mb-12 animate-fade-up animation-delay-300">
-            Final-year CSE student building production-grade apps with{" "}
-            <strong className="text-ink">Java, Spring Boot &amp; React</strong>.
-            700+ DSA problems solved. I ship real things that work.
+          CSE graduate building production-grade apps with{" "}
+          <strong className="text-ink">Java, Spring Boot &amp; React</strong>.
+          750+ DSA problems solved. I ship real things that work.
           </p>
 
           {/* CTA buttons */}
