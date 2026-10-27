@@ -1,5 +1,5 @@
 export const RESUME_LINK =
-  "https://drive.google.com/file/d/1rWlGETErYe6PiaB3DnsBNvcV1A_U7jx_/view?usp=drive_link";
+  "https://drive.google.com/file/d/1iKGou63Pnmju0H7MzFBpk4suw23vZzik/view?usp=sharing";
 export const RESUME_DOWNLOAD_LINK = "/Kumar_Gaurav_Resume.pdf";
 
 // ── Skills ────────────────────────────────────────────────────────────────────
