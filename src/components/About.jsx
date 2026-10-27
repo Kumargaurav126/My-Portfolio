@@ -16,13 +16,13 @@ export default function About() {
           <div className="space-y-5 text-muted text-base leading-loose">
             <p>
               I'm a{" "}
-              <strong className="text-ink">
-                final-year Computer Science student
-              </strong>{" "}
-              at Lakshmi Narain College of Technology, Bhopal, with a CGPA of{" "}
+              <strong className="text-ink">Computer Science graduate</strong>{" "}
+              from Lakshmi Narain College of Technology, Bhopal, with a CGPA of{" "}
               <strong className="text-ink">8.19</strong>. I specialise in
               building production-grade, full-stack applications —
-              backend-first.
+              backend APIs, frontend interfaces, and everything in between. I enjoy
+              working on complex problems and shipping solutions that are{" "}
+              <strong className="text-ink">scalable, secure, and maintainable</strong>.
             </p>
             <p>
               My stack is Java + Spring Boot on the server, React on the client.
@@ -32,7 +32,7 @@ export default function About() {
             </p>
             <p>
               Outside of shipping projects, I actively compete in DSA —{" "}
-              <strong className="text-ink">700+ problems</strong> solved across
+              <strong className="text-ink">750+ problems</strong> solved across
               LeetCode, GFG, and Code360.
             </p>
           </div>
