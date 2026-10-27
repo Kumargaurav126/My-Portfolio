@@ -25,10 +25,7 @@ export default function About() {
               <strong className="text-ink">scalable, secure, and maintainable</strong>.
             </p>
             <p>
-              My stack is Java + Spring Boot on the server, React on the client.
-              I've shipped systems with real-time WebSocket, Gemini AI
-              integration, and OAuth 2.0 secured endpoints — all deployed and
-              live.
+              My stack is <strong className="text-ink">Java + Spring Boot</strong> on the server, <strong className="text-ink">React</strong> on the client.
             </p>
             <p>
               Outside of shipping projects, I actively compete in DSA —{" "}
